@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menubar</title>
+    <link rel="stylesheet" href="./css/menubar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./js/menubar.js"></script>
+</head>
+
+<body>
+    <header id="menubarContainer">
+        <a onclick="toggle()" id="bars" href="#"><img src="./icons/bars-solid.svg" alt="Bars"></a>
+        <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt_Logo"></a>
+        <nav id="menubarLinks" class="">
+            <a href="./index.html">Start</a>
+            <div class="dropdown">
+                <a href="#">Rezepte</a>
+                <div class="dropdown-content">
+                    <a class="dropdownRezept" href="./bolognese.html">Spaghetti Bolognese</a>
+                    <a class="dropdownRezept" href="./lasagne.html">Lasagne</a>
+                    <a class="dropdownRezept" href="./pizza.html">Tunfisch Pizza</a>
+                    <a class="dropdownRezept" href="./ofenkartoffeln.html">Ofenkartoffeln</a>
+                    <a class="dropdownRezept" href="./sauerkrautCasserole.html">Sauerkrautauflauf</a>
+                    <a class="dropdownRezept" href="./redWineNoodles.html">Rotwein Nudeln</a>
+                </div>
+            </div>
+            <a onclick="openCloseFormular()" href="#">Kontakt</a>
+            <a href="./imprint.html">Impressum</a>
+            <button id="backResponsive" class="" onclick="toggle()"> <img src="./icons/angle-right-solid.svg" alt="">
+            </button>
+        </nav>
+    </header>
+    <form id="contactContainer" class="d-none">
+        <button class="closeFormular_btn" onclick="openCloseFormular()">x</button>
+        <h2 class="h2">Kontaktformular</h2>
+        <div id="inputContact">
+            <input class="name" type="text" minlength="1" placeholder="Name eingeben" required>
+            <input class="name" type="email" minlength="1" placeholder="E-Mail eingeben" required>
+        </div>
+        <textarea name="" id="userMessage" cols="45" rows="5" placeholder="Hinterlassen Sie Ihre Nachricht"></textarea>
+        <button onclick="submitFormular()" class="btn_senden" type="submit">Senden</button>
+    </form>
+</body>
+
+</html>

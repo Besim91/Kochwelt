@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt-Ofenkartoffeln</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small_hat.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="./js/recipe.js"></script>
+    <link rel="stylesheet" href="./css/recipestyle.css">
+    <script src="./js/menubar.js"></script>
+    <script src="./js/include.js"></script>
+</head>
+
+<body onload="recipe2(); includeHTML()">
+    <div w3-include-html="menubar.html"></div>
+    <section class="headContainer">
+        <h1>Frische Ofenkartoffeln</h1>
+        <img class="headImage" src="img/ofenkartoffeln.jpg" alt="">
+        <div class="iconContainer">
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">15 Min</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/brain-solid.svg" alt="">
+                <span class="iconText">einfach</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/calendar-alt-regular.svg" alt="">
+                <span class="iconText">01.12.2023</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/fire.png" alt="">
+                <span class="iconText" id="kcal1"></span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="portionCalc">
+            <h3>Zutaten für: </h3>
+            <div class="portionDiv">
+                <input class="inputfieldPortion" id="input" min="1" max="100" type="number" value="1"><button
+                    onclick="recipe2()" class="btn-portion"><img class="reloadIcon" src="./img/rotate-solid white.svg"
+                        alt="">Portionen</button>
+            </div>
+        </div>
+
+        <div class="tableCalc">
+            <table id="table1">
+            </table>
+        </div>
+
+        <div class="tableExtrasTitle">
+            <h3>Für den Dip:</h3>
+        </div>
+
+        <div class="tableCalc">
+            <table id="tableExtras">
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h3>Zubereitung:</h3>
+        <div class="iconContainer">
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">ca. 15 Min</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">Gesamtzeit: 15 Min</span>
+            </div>
+        </div>
+        <p>Die geschälten, geviertelten Kartoffeln gut mit Küchenkrepp abtrocknen. Die Kartoffeln in eine große Schale
+            geben, die Gewürze dazugeben und alles gut mit den Händen durchmengen. Nun das Öl dazugeben und nochmals
+            durchmengen. Die Kartoffeln auf ein Blech geben. Ich fette das Blech nicht noch zusätzlich ein, da das Öl an
+            den Kartoffeln bereits genügt.
+
+            Im vorgeheizten Backofen bei 200 °C Ober-/Unterhitze auf mittlerer Schiene ca. 30 - 40 Min. (je nach Größe
+            der Kartoffelspalten) backen.
+
+            Alle 10 Min. müssen die Spalten gewendet werden, damit sie von allen Seiten schön kross werden. Wenn die
+            Spalten anfangs etwas am Blech festbacken - nicht schlimm, einfach mit einem Pfannenwender lösen.
+
+            Nun aus der sauren Sahne, dem Zitronensaft, den Gewürzen und den Kräutern einen Dip anrühren. Der kann bei
+            Bedarf natürlich auch mit etwas Knoblauch verfeinert werden.</p>
+    </section>
+    
+    <section class="creator-section">
+        <h3>Rezept erstellt von</h3>
+        <div class="img-and-creator">
+            <img class="creator-img " src="img/marco.png" alt=""> <span class="creator">Marco</span>
+        </div>
+    </section>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

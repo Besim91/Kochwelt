@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauerkrautauflauf</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small_hat.png">s
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/recipestyle.css">
+    <script src="./js/sauerkrautCasserole.js"></script>
+    <script src="./js/menubar.js"></script>
+</head>
+
+<body onload="includeHTML(); recipe()">
+    <div w3-include-html="menubar.html"></div>
+    <section class="headContainer">
+        <h1>Sauerkrautauflauf</h1>
+        <img class="headImage" src="img/sauerkrautauflauf.webp" alt="">
+        <div class="iconContainer">
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">15 Min.</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/brain-solid.svg" alt="">
+                <span class="iconText">simpel</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/calendar-alt-regular.svg" alt="">
+                <span class="iconText">04.12.2023</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/fire.png" alt="">
+                <span class="iconText" id="kcal"></span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="portionCalc">
+            <h3>Zutaten für: </h3>
+            <div class="portionDiv">
+                <input class="inputfieldPortion" id="input" min="1" max="100" type="number" value="1">
+                <button onclick="recipe()" class="btn-portion"><img class="reloadIcon"
+                        src="icons/rotate-solid_white.svg" alt="">Portionen</button>
+            </div>
+        </div>
+
+        <div class="tableCalc">
+            <table id="table">
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h3>Zubereitung:</h3>
+        <div class="iconContainer">
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">Arbeitszeit ca. 20 Minuten</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">Koch-/Backzeit ca. 45 Minuten</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">Gesamtzeit ca. 1 Stunde 5 Minuten</span>
+            </div>
+        </div>
+        <p>
+            Zwiebel schälen und in kleine Würfel schneiden. In einer Pfanne mit dem Hackfleisch zusammen anbraten. Dann
+            in eine Auflaufform umfüllen.
+            <br> <br>
+            Den Schinken in der Pfanne auslassen und anschließend das Sauerkraut und die Chili- bzw. die Paprikasauce
+            hinzufügen. Alles ein wenig köcheln lassen, dann auch in die Auflaufform geben.
+            Sahne, Schmand und die Gewürze zusammenrühren und über den Auflauf gießen.
+            Ca. 15 min bei 200°C Umluft im Backofen überbacken.
+        </p>
+    </section>
+
+    
+        <section class="creator-section">
+            <h3>Rezept erstellt von</h3>
+            <div class="img-and-creator">
+                <img class="creator-img " src="img/giovanni.jpg" alt=""> <span class="creator">Giovanni</span>
+            </div>
+        </section>
+        <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

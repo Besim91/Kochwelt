@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt-Thunfisch-Pizza</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small_hat.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/recipestyle.css">
+    <script src="./js/recipe.js"></script>
+    <script src="./js/include.js"></script>
+    <script src="./js/menubar.js"></script>
+</head>
+
+<body onload="recipe(); includeHTML()">
+    <div w3-include-html="menubar.html"></div>
+    <section class="headContainer">
+        <h1>Thunfisch Pizza</h1>
+        <img class="headImage" src="img/pizzathunfisch.jpg" alt="">
+        <div class="iconContainer">
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">30 Min</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/brain-solid.svg" alt="">
+                <span class="iconText">normal</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/calendar-alt-regular.svg" alt="">
+                <span class="iconText">01.08.2022</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/fire.png" alt="">
+                <span class="iconText" id="kcal"></span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="portionCalc">
+            <h3>Zutaten für: </h3>
+            <div class="portionDiv">
+                <input class="inputfieldPortion" id="input" min="1" max="100" type="number" value="1"><button
+                    onclick="recipe()" class="btn-portion"><img class="reloadIcon" src="./img/rotate-solid white.svg"
+                        alt="">Portionen</button>
+            </div>
+        </div>
+
+        <div class="tableCalc">
+            <table id="table">
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h3>Zubereitung:</h3>
+        <div class="iconContainer">
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">ca. 1 Std</span>
+            </div>
+            <div class="iconBackground">
+                <img class="icons" src="icons/clock-regular.svg" alt="">
+                <span class="iconText">Gesamtzeit: 1 Std</span>
+            </div>
+        </div>
+        <p>Für den Teig alle Zutaten in eine Schüssel geben und mindestens 5 Min. gut durchkneten. Den Teig ca. 30 Min.
+            gehen lassen. Anschließend den Teig in 6 Portionen teilen und jeweils zu Kugeln formen.
+
+            Für die Sauce zunächst eine Zwiebel abziehen und fein würfeln. Zwiebelwürfel mit Knoblauch in Olivenöl
+            vorsichtig anbraten, Tomatenmark hinzufügen, mit Tomaten auffüllen und aufkochen lassen. Die Herdhitze
+            herunterschalten und die Soße ca. 30 Min. dicklich einkochen lassen. Die Soße mit Kräutern und Gewürzen nach
+            Geschmack würzen.
+
+            Die Teigkugeln ausrollen und die Tomatensoße draufgeben. Anschließend nach Geschmack die Pizzen mit
+            Thunfisch, Mais und Oliven belegen.
+
+            Den Backofen auf 220 °C Ober-/Unterhitze vorheizen. Die Pizzen ca. 15 - 20 Min. backen.
+
+            Die Pizzen mit Parmesan bestreuen und sofort servieren.</p>
+    </section>
+
+    
+    <section class="creator-section">
+        <h3>Rezept erstellt von</h3>
+        <div class="img-and-creator">
+            <img class="creator-img " src="img/marco.png" alt=""> <span class="creator">Marco</span>
+        </div>
+    </section>
+
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>

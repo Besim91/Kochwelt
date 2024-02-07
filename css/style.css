@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif
+    
+}
+
+html { scroll-behavior: smooth; }
+
+.recipeContainer {
+    display: flex;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+.recipeOfdayImage {
+    aspect-ratio: 2/1;
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recipeText {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.lightText {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.recipeText h1 {
+    margin-top: 0px;
+}
+
+.btn {
+    background-color: rgb(0, 128, 0);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 0;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px -1px black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 128, 1, 0.8);
+}
+
+.reciepButtonIcon {
+    margin-right: 8px;
+    vertical-align: text-top;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+}
+
+.popularRecipeContainer {    
+    background-color: rgb(239,239,239);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -13%;
+    margin-right: -12.5%;
+    padding-left: 13%;
+    padding-right: 12.5%;
+}
+
+.reciepImages {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 20vh;
+    aspect-ratio: 1/1;
+}
+
+.reciepImages:hover {
+    transition: all 355ms ease-in-out;
+    box-shadow: 0px 3px 8px -1px black;
+}
+
+.popularFlexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popularFlexContainerMiddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.somethingNewTitle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.popularTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reciepSubtitle {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* ..................................................... Responsive */
+
+@media (max-width: 750px) {
+    .recipeOfdayImage {
+        width: 450px;
+        height: 200px;
+    }
+
+    .recipeText{
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .btn {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 1000px)  {
+    .reciepImages {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .popularTitle {
+        display: none;
+    }
+
+    .somethingNewTitle{
+        flex-direction: column;
+    }
+
+    .reciepSubtitleMobile {
+        margin-bottom: 20px;
+    }
+
+    .reciepSubtitleMobile{
+        margin-bottom: 20px;
+    }
+
+    .popularRecipeContainer {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .recipeOfdayImage {
+        width: 450px;
+        height: 200px;
+    }
+
+    .recipeContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipeText{
+        margin-top: 20px;
+        width: 400px;
+    }
+
+
+    .btn {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .popularRecipeContainer {
+        flex-direction: column;
+    }
+
+    .popularTitle {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 470px) {
+    .recipeOfdayImage {
+        width: 300px;
+        height: 150px;
+    }
+
+    .recipeText{
+        margin-top: 20px;
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-left: 50px;
+        margin: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .recipeText{
+        width: 250px;
+    }
+
+}
+
+@media (min-width: 2560px) {
+    .recipeContainer{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .popularRecipeContainer {
+        padding-left: 33%;
+        padding-right: 33%;
+    }
+
+    #slideContent {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

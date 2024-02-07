@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo_small_hat.png">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="./js/include.js"></script>
+  <link rel="stylesheet" href="./css/switcher.css">
+  <script src="./js/switcher.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0507148a-e2b5-426a-b987-84fae3f5faae"
+    type="text/javascript"></script>
+  <script id="CookieDeclaration" src="https://consent.cookiebot.com/0507148a-e2b5-426a-b987-84fae3f5faae/cd.js"
+    type="text/javascript" async></script>
+  <script src="./js/menubar.js"></script>
+
+</head>
+
+<body onload="includeHTML(); sliderContent1()">
+  <div w3-include-html="menubar.html"></div>
+  <section id="recipeOfday" class="recipeContainer">
+    <img class="recipeOfdayImage" src="./img/ofenkartoffeln.jpg" alt="Ein Bild mit Ofenkartoffeln" />
+    <div class="recipeText">
+      <h1>Leckere Ofenkartoffeln</h1>
+      <p class="lightText">
+        Leckere Ofenkartoffeln, ein einfaches Rezept für ein leckeres und
+        gesundes Mittagessen. <br />
+        Es ist nur wenig Aufwand nötig in ca. 45 Minuten kannst du ein
+        schmackhaftes Mittag oder Abendessen zubereiten
+      </p>
+
+      <div class="buttonContainer">
+        <a class="btn" href="ofenkartoffeln.html">
+          <img class="reciepButtonIcon" src="./img/receipt-solid.svg" alt="" />Zum Rezept</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="popularRecipe" class="popularRecipeContainer">
+    <p class="popularTitle">Mal was Außergewöhnliches?</p>
+    <div class="somethingNewTitle">
+      <div class="popularFlexContainer">
+        <a href="bolognese.html"><img class="reciepImages" src="./img/bolognese.jpg" alt="" /></a>
+        <span class="reciepSubtitle">Besim's</span>
+        <span class="reciepSubtitle reciepSubtitleMobile">Spaghetti Bolognese</span>
+      </div>
+      <div class="popularFlexContainerMiddle">
+        <a href="sauerkrautCasserole.html"><img class="reciepImages" src="./img/auflauf.jpg" alt="" /></a>
+        <span class="reciepSubtitle">Giovanni's</span>
+        <span class="reciepSubtitle reciepSubtitleMobile">Sauerkrautauflauf</span>
+      </div>
+
+      <div class="popularFlexContainer">
+        <a href="pizza.html">
+          <img class="reciepImages" src="./img/pizzathunfisch.jpg" alt="" /></a>
+        <span class="reciepSubtitle">Marco's</span>
+        <span class="reciepSubtitle reciepSubtitleMobile">Thunfisch Pizza</span>
+      </div>
+    </div>
+  </section>
+  <section id="slideContent">
+  </section>
+
+  <!-- <div w3-include-html="switcher.html"></div> Funktioniert so leider im mom nicht -->
+  <div w3-include-html="footer.html" id="kontakte"></div>
+</body>
+
+
+
+</html>
